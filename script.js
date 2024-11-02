@@ -60,11 +60,12 @@ function checkAns(idx){
         setTimeout(()=>{
             body.classList.remove("red")
         },300);
-         if(isMobile){
+        if(isMobile){
             h2.innerHTML=`Game Over! Your score was ${level}.<br> Tap on the screen to restart the game.<br>High Score is ${highScore}`;
-
         }
+        else{
         h2.innerHTML=`Game Over! Your score was ${level}.<br> Press any key to restart the game.<br>High Score is ${highScore}`;
+        }
         reset();
     }
 }
