@@ -16,6 +16,7 @@ function startGame(){
 }
 
 if(isMobile){
+    h2.innerText="Tap on the screen to start the game";
     document.addEventListener("touchstart",startGame);
 }else{
 document.addEventListener("keypress",startGame);
