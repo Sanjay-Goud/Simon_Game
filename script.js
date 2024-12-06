@@ -81,3 +81,16 @@ function reset(){
     userSeq=[];
     level=0;
 }
+
+function playSound(color){
+let audio=new Audio(`sounds/${color}.wav`);
+audio.play();
+}
+
+highScore=localStorage.getItem("highScore")||0;
+function updateHighScore(score){
+    if(score>highScore){
+        highScore=score;
+        localStorage.setItem("highScore",highScore);
+    }
+}
