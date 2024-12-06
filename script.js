@@ -41,6 +41,7 @@ function levelUp(){
 function btnPress(){
     blink(this);
     userColor=this.getAttribute("id");
+    playSound(userColor);
     userSeq.push(userColor);
     checkAns(userSeq.length-1);
 
