@@ -83,6 +83,7 @@ function reset(){
     level=0;
 }
 
+
 function playSound(color){
 let audio=new Audio(`sounds/${color}.wav`);
 audio.play();
